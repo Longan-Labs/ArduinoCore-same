@@ -27,7 +27,7 @@ parser.add_argument(
     metavar='board',
     nargs='*',
     help='list of boards to be built -- Note that the fqbn is created by prepending "{}"'.format(FQBN_PREFIX),
-    default= [ 'metro_m0', 'metro_m4', 'circuitplayground_m0' ]
+    default= [ 'itsybitsy_m4', 'same51g19a_m4' ]
     )
 args = parser.parse_args()
 

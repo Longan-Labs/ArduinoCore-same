@@ -63,7 +63,7 @@ typedef enum _EAnalogChannel
 
 #if defined(__SAMD51__)
 
-#if defined(__SAMD51G19A__)
+#if defined(__SAMD51G19A__) || defined(__SAME51G19A__)
 
 typedef enum _ETCChannel
 {
@@ -90,7 +90,7 @@ typedef enum _ETCChannel
   TC3_CH0 =  (6<<8)|(0),
   TC3_CH1 =  (6<<8)|(1),
 } ETCChannel ;
-#elif defined(__SAMD51J19A__) || defined(__SAMD51J20A__)
+#elif defined(__SAMD51J19A__) || defined(__SAMD51J20A__) || defined(__SAME51J19A__) || defined(__SAME51J20A__)
 
 typedef enum _ETCChannel
 {
@@ -136,7 +136,7 @@ typedef enum _ETCChannel
   TC7_CH1 =  (12<<8)|(1),
 } ETCChannel ;
 
-#elif defined(__SAMD51P19A__) || defined(__SAMD51P20A__)
+#elif defined(__SAMD51P19A__) || defined(__SAMD51P20A__) || defined(__SAME51P19A__) || defined(__SAME51P20A__)
 
 typedef enum _ETCChannel
 {
