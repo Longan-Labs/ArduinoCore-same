@@ -1,6 +1,13 @@
-# Arduino Core for SAMD21 and SAMD51 CPU
+# Arduino Core for SAMD21 and SAMD51 CPU (+SAME51 Fork)
 
-[![Build Status](https://github.com/adafruit/ArduinoCore-samd/workflows/Build/badge.svg)](https://github.com/adafruit/ArduinoCore-samd/actions)
+This fork contains files for running a SAME51 processor using Adafruit/Arduino SAMD BSP files
+
+Bossa does not support SAME51 CPUs, modified source here...
+https://github.com/deezums/BOSSA
+
+Arduino CMSIS-Atmel files do not contain SAME51 data, modified source here...
+https://github.com/deezums/ArduinoModule-CMSIS-Atmel
+
 
 This repository contains the source code and configuration files of the Arduino Core
 for Atmel's SAMD21 and SAMD51 processor (used on the Arduino/Genuino Zero, MKR1000 and MKRZero boards).
