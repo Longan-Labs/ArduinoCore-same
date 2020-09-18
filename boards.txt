@@ -1483,5 +1483,5 @@ adafruit_same51g19a_m4.menu.usbstack.tinyusb=TinyUSB
 adafruit_same51g19a_m4.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
 adafruit_same51g19a_m4.menu.debug.off=Off
 adafruit_same51g19a_m4.menu.debug.on=On
-adafruit_same51g19a_m4.menu.debug.on.build.flags.debug=-g
+adafruit_same51g19a_m4.menu.debug.on.build.flags.debug=-g 
 
