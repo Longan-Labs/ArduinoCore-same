@@ -24,15 +24,15 @@ VERSION=`grep version= platform.txt | sed 's/version=//g'`
 PWD=`pwd`
 FOLDERNAME=`basename $PWD`
 THIS_SCRIPT_NAME=`basename $0`
-FILENAME=package_samd-b${BUILD_NUMBER}.tar.bz2
+FILENAME=package_same-b${BUILD_NUMBER}.tar.bz2
 
 rm -f $FILENAME
 
 # Change name in platform.txt
-sed -i "s/name=.*/name=SAMD Pull request #${PR_NUMBER} (Build ${BUILD_NUMBER})/" platform.txt
+sed -i "s/name=.*/name=SAME Pull request #${PR_NUMBER} (Build ${BUILD_NUMBER})/" platform.txt
 
 cd ..
-tar --transform "s|$FOLDERNAME|samd-PR${PR_NUMBER}_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
+tar --transform "s|$FOLDERNAME|same-PR${PR_NUMBER}_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
 cd -
 
 mv ../$FILENAME .
@@ -46,5 +46,5 @@ sed s/%%BUILD_NUMBER%%/${BUILD_NUMBER}/ |
 sed s/%%VERSION%%/${VERSION}-build-${BUILD_NUMBER}/ |
 sed s/%%FILENAME%%/${FILENAME}/ |
 sed s/%%CHECKSUM%%/${CHKSUM}/ |
-sed s/%%SIZE%%/${SIZE}/ > package_samd-b${BUILD_NUMBER}_index.json
+sed s/%%SIZE%%/${SIZE}/ > package_same-b${BUILD_NUMBER}_index.json
 

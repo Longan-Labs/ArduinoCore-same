@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Arduino SAMD core - Pull request #%%PR_NUMBER%% (build %%BUILD_NUMBER%%)",
+          "name": "Arduino SAME core - Pull request #%%PR_NUMBER%% (build %%BUILD_NUMBER%%)",
           "architecture": "samd",
           "version": "%%VERSION%%",
           "category": "Arduino",
@@ -20,39 +20,39 @@
           "size": "%%SIZE%%",
           "boards": [
             {
-              "name": "Arduino Zero"
+              "name": "SAME51G19A M4"
             }
           ],
           "toolsDependencies": [
             {
-              "packager": "arduino",
+              "packager": "deezums",
               "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
+              "version": "9-2019q4"
             },
             {
-              "packager": "arduino",
+              "packager": "deezums",
               "name": "bossac",
-              "version": "1.7.0"
+              "version": "1.9.2"
             },
             {
               "packager": "arduino",
               "name": "openocd",
-              "version": "0.9.0-arduino6-static"
+              "version": "0.10.0-arduino7"
             },
             {
-              "packager": "arduino",
+              "packager": "deezums",
               "name": "CMSIS",
-              "version": "4.5.0"
+              "version": "5.4.0"
             },
             {
-              "packager": "arduino",
+              "packager": "deezums",
               "name": "CMSIS-Atmel",
-              "version": "1.1.0"
+              "version": "1.2.1"
             },
             {
               "packager": "arduino",
               "name": "arduinoOTA",
-              "version": "1.2.0"
+              "version": "1.2.1"
             }
           ]
         }

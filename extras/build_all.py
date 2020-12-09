@@ -5,7 +5,7 @@ import subprocess
 import time
 import argparse
 
-FQBN_PREFIX='adafruit:samd:adafruit_'
+FQBN_PREFIX='deezums:samd:'
 
 
 parser = argparse.ArgumentParser(
@@ -27,7 +27,7 @@ parser.add_argument(
     metavar='board',
     nargs='*',
     help='list of boards to be built -- Note that the fqbn is created by prepending "{}"'.format(FQBN_PREFIX),
-    default= [ 'itsybitsy_m4', 'same51g19a_m4' ]
+    default= [ 'same51g19a_m4' ]
     )
 args = parser.parse_args()
 
